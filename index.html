@@ -2340,6 +2340,7 @@
         </div>
         
         <form id="contactForm" action="https://formspree.io/f/mzdaylgj" method="POST">
+          <input type="hidden" name="client_id" value="mgwoodshop">
           <div class="form-grid">
             <div class="form-group">
               <label>Full Name</label>
@@ -2491,6 +2492,7 @@
     <h2 class="popup-title">Get a Free Quote?</h2>
     <p class="popup-text">We'll reach out within 3 hours. No obligation.</p>
     <form class="popup-form" id="popupForm" action="https://formspree.io/f/mzdaylgj" method="POST">
+      <input type="hidden" name="client_id" value="mgwoodshop">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="tel" name="phone" placeholder="Phone Number">
       <input type="email" name="email" placeholder="Email Address" required>
@@ -2578,12 +2580,20 @@
     btn.disabled = true;
     
     try {
+      // Primary: submit to Formspree
       const res = await fetch(this.action, {
         method: 'POST',
         body: new FormData(this),
         headers: { 'Accept': 'application/json' }
       });
-      
+
+      // Fire-and-forget: also notify LazusAI
+      fetch('https://lazusai.com/webhook/lead', {
+        method: 'POST',
+        body: new FormData(this),
+        headers: { 'Accept': 'application/json' }
+      }).catch(() => {});
+
       if (res.ok) {
         this.style.display = 'none';
         document.getElementById('formSuccess').style.display = 'block';
@@ -2609,6 +2619,13 @@
         body: new FormData(this),
         headers: { 'Accept': 'application/json' }
       });
+
+      // Fire-and-forget: also notify LazusAI
+      fetch('https://lazusai.com/webhook/lead', {
+        method: 'POST',
+        body: new FormData(this),
+        headers: { 'Accept': 'application/json' }
+      }).catch(() => {});
       
       if (res.ok) {
         this.innerHTML = '<div style="text-align:center; padding: 20px 0;"><div style="font-size: 3rem; margin-bottom: 16px;">✓</div><h3 style="font-family: Syne, sans-serif; font-size: 1.5rem; margin-bottom: 8px;">Thanks!</h3><p>We\'ll call you within 3 hours.</p></div>';
