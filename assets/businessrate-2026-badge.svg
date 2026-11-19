@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 700" width="560" height="700" role="img" aria-label="BusinessRate Ranked #1 Award Winner - June 2026">
+  <title>BusinessRate RANKED #1 - Award Winner - June 2026</title>
+  <defs>
+    <linearGradient id="plate" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1B2735"/>
+      <stop offset="55%" stop-color="#17212E"/>
+      <stop offset="100%" stop-color="#101822"/>
+    </linearGradient>
+    <linearGradient id="goldfill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E9D191"/>
+      <stop offset="50%" stop-color="#DFBE6A"/>
+      <stop offset="100%" stop-color="#B8892B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- shield plate -->
+  <path d="M 34,5 L 526,5 Q 555,5 555,34 L 555,548 L 280,694 L 5,548 L 5,34 Q 5,5 34,5 Z" fill="url(#plate)" stroke="url(#goldfill)" stroke-width="9" stroke-linejoin="round"/>
+  <path d="M 46,20 L 514,20 Q 539,20 539,45 L 539,542 L 280,668 L 21,542 L 21,45 Q 21,20 46,20 Z" fill="none" stroke="#DFBE6A" stroke-width="2.5" stroke-opacity="0.65"/>
+
+  <!-- RANKED #1 -->
+  <text x="280" y="96" text-anchor="middle" font-family="Liberation Sans, Helvetica Neue, Helvetica, Arial, sans-serif"
+        font-size="58" font-weight="bold" letter-spacing="3" fill="url(#goldfill)">RANKED #1</text>
+
+  <!-- BusinessRate band -->
+  <rect x="30" y="124" width="500" height="112" rx="10" fill="#F3F1EC" stroke="url(#goldfill)" stroke-width="5"/>
+  <text x="125.9" y="196" font-family="Liberation Sans, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="47" font-weight="bold" fill="#16202E">Business</text>
+  <text x="334.8" y="196" font-family="Liberation Sans, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="47" font-weight="normal" fill="#16202E">Rate</text>
+
+  <!-- JUNE / 2026 -->
+  <text x="280" y="292" text-anchor="middle" font-family="Liberation Sans, Helvetica Neue, Helvetica, Arial, sans-serif"
+        font-size="38" font-weight="normal" letter-spacing="9" fill="#F3F1EC">JUNE</text>
+  <text x="280" y="404" text-anchor="middle" font-family="Liberation Sans, Helvetica Neue, Helvetica, Arial, sans-serif"
+        font-size="106" font-weight="bold" letter-spacing="1" fill="#F3F1EC">2026</text>
+
+  <!-- side accents -->
+  <path d="M 62,268 L 62,470" stroke="#DFBE6A" stroke-width="3.5" stroke-opacity="0.9"/>
+  <path d="M 498,268 L 498,470" stroke="#DFBE6A" stroke-width="3.5" stroke-opacity="0.9"/>
+
+  <!-- AWARD WINNER -->
+  <text x="280" y="466" text-anchor="middle" font-family="Liberation Sans, Helvetica Neue, Helvetica, Arial, sans-serif"
+        font-size="29" font-weight="bold" letter-spacing="4.5" fill="#EFE3BC">AWARD WINNER</text>
+
+  <!-- stars -->
+  <polygon points="280.0,533.0 287.0,550.4 305.7,551.7 291.3,563.7 295.9,581.8 280.0,571.9 264.1,581.8 268.7,563.7 254.3,551.7 273.0,550.4" fill="#DFBE6A"/>
+  <polygon points="232.0,540.0 237.2,552.9 251.0,553.8 240.4,562.7 243.8,576.2 232.0,568.8 220.2,576.2 223.6,562.7 213.0,553.8 226.8,552.9" fill="#DFBE6A"/>
+  <polygon points="328.0,540.0 333.2,552.9 347.0,553.8 336.4,562.7 339.8,576.2 328.0,568.8 316.2,576.2 319.6,562.7 309.0,553.8 322.8,552.9" fill="#DFBE6A"/>
+  <polygon points="190.0,545.0 193.9,554.7 204.3,555.4 196.3,562.0 198.8,572.1 190.0,566.6 181.2,572.1 183.7,562.0 175.7,555.4 186.1,554.7" fill="#DFBE6A"/>
+  <polygon points="370.0,545.0 373.9,554.7 384.3,555.4 376.3,562.0 378.8,572.1 370.0,566.6 361.2,572.1 363.7,562.0 355.7,555.4 366.1,554.7" fill="#DFBE6A"/>
+</svg>
