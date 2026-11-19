@@ -1593,6 +1593,7 @@
     .hamburger { display: flex; }
     
     section { padding: 60px 20px; }
+    .prefab-section { padding: 60px 20px; }
     .hero-content { padding: 100px 20px 60px; }
     .hero-title { font-size: clamp(2rem, 8vw, 3rem); }
     .hero-stats { gap: 24px; }
@@ -1972,14 +1973,16 @@
 
   /* ---- Prefabricated Cabinets announcement ---- */
   .prefab-section {
-    padding: clamp(72px, 9vw, 128px) 0;
+    /* match the global section gutters (section { padding: 100px 64px }) so the
+       band and its content span the full viewport like every other section */
+    padding: clamp(72px, 9vw, 128px) 64px;
     background: var(--cream);
     border-top: 1px solid var(--border);
   }
   .prefab-inner {
-    max-width: 1180px;
-    margin: 0 auto;
-    padding: 0 clamp(20px, 5vw, 64px);
+    max-width: none;
+    margin: 0;
+    padding: 0;
   }
   .prefab-title {
     font-size: clamp(2rem, 4vw, 3.15rem);
@@ -2015,7 +2018,7 @@
   .prefab-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0 48px;
+    gap: 0 clamp(32px, 5vw, 96px);
     margin: 44px 0 0;
   }
   .prefab-list { list-style: none; margin: 0; padding: 0; }
