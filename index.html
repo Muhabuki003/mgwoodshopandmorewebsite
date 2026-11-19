@@ -1593,7 +1593,6 @@
     .hamburger { display: flex; }
     
     section { padding: 60px 20px; }
-    .prefab-section { padding: 60px 20px; }
     .hero-content { padding: 100px 20px 60px; }
     .hero-title { font-size: clamp(2rem, 8vw, 3rem); }
     .hero-stats { gap: 24px; }
@@ -1983,6 +1982,10 @@
     max-width: none;
     margin: 0;
     padding: 0;
+  }
+  /* must come after .prefab-section so the mobile gutters actually win */
+  @media (max-width: 768px) {
+    .prefab-section { padding: 60px 20px; }
   }
   .prefab-title {
     font-size: clamp(2rem, 4vw, 3.15rem);
